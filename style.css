@@ -13,6 +13,22 @@ h2, p {
     color: white;
 }
 
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    padding: 0 54px 72px;
+    box-sizing: border-box;
+    background-color: #0C154A;
+    text-align: center;
+}
+
+.main-header h2 {
+    margin-top: 0;
+}
+
 header button.header-button {
     margin-bottom: 10px;
     margin-top: 16px;
@@ -24,11 +40,6 @@ header button.header-button {
     font-weight: bold;
 }
 
-.form h2 {
-    text-align: right;
-    font-size: 18px;
-}
-
 section.form {
     display: grid;
     width: 80%;
@@ -38,6 +49,11 @@ section.form {
     background-color: #2039CC;
     padding: 10px 45px 5px;
     border-radius: 6px;
+}
+
+.form h2 {
+    text-align: right;
+    font-size: 18px;
 }
 
 form input, form button {
@@ -60,22 +76,6 @@ form button {
     font-weight: bold;
     background-color: white;
     color: #080E33;
-}
-
-.main-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 35%;
-    padding: 0 54px 72px;
-    box-sizing: border-box;
-    background-color: #0C154A;
-    text-align: center;
-}
-
-.main-header h2 {
-    margin-top: 0;
 }
 
 .main-content{
@@ -195,7 +195,8 @@ main .donors {
 
 .donor p {
     display: block;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 16px;
     margin: 5px;
 }
 
