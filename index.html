@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="main-header">
-        <img src="logo.png" alt="Logo Solidariedade" class="logo">
+        <img src="/logo.png" alt="Logo Solidariedade" class="logo">
         <h2>A sua doação importa</h2>
         <p>Seja solidário</p>
         <p>
@@ -25,7 +25,7 @@
             <form action="/" method="POST">
                 <input type="text" name="name" placeholder="Nome Completo">
                 <input type="text" name="email" placeholder="Email">
-                <input type="text" name="blood" placeholder="Tipo de móvel">
+                <input type="text" name="movel" placeholder="Tipo de móvel">
                 <button>Quero ajudar</button>
             </form>
         </section>
@@ -41,70 +41,12 @@
         <h2 class="main-title">Últimos <span>doadores</span></h2>
 
         <section class="donors">
-            <div class="donor">
-                <p>Ana Maria</p>
-                <div class="mobile">Doou Cama</div>
-            </div>
-            <div class="donor">
-                <p>Maria</p>
-                <div class="mobile">Doou Geladeira</div>
-            </div>
-            <div class="donor">
-                <p>José</p>
-                <div class="mobile">Doou Fogão</div>
-            </div>
-            <div class="donor">
-                <p>Pedro</p>
-                <div class="mobile">Doou Colchão</div>
-            </div>
-            <div class="donor">
-                <p>Ana Maria</p>
-                <div class="mobile">Doou Cama</div>
-            </div>
-            <div class="donor">
-                <p>Maria</p>
-                <div class="mobile">Doou Geladeira</div>
-            </div>
-            <div class="donor">
-                <p>José</p>
-                <div class="mobile">Doou Fogão</div>
-            </div>
-            <div class="donor">
-                <p>Pedro</p>
-                <div class="mobile">Doou Colchão</div>
-            </div>
-            <div class="donor">
-                <p>Ana Maria</p>
-                <div class="mobile">Doou Cama</div>
-            </div>
-            <div class="donor">
-                <p>Maria</p>
-                <div class="mobile">Doou Geladeira</div>
-            </div>
-            <div class="donor">
-                <p>José</p>
-                <div class="mobile">Doou Fogão</div>
-            </div>
-            <div class="donor">
-                <p>Pedro</p>
-                <div class="mobile">Doou Colchão</div>
-            </div>
-            <div class="donor">
-                <p>Ana Maria</p>
-                <div class="mobile">Doou Cama</div>
-            </div>
-            <div class="donor">
-                <p>Maria</p>
-                <div class="mobile">Doou Geladeira</div>
-            </div>
-            <div class="donor">
-                <p>José</p>
-                <div class="mobile">Doou Fogão</div>
-            </div>
-            <div class="donor">
-                <p>Pedro</p>
-                <div class="mobile">Doou Colchão</div>
-            </div>
+            {% for donor in donors %}
+                <div class="donor">
+                    <p>{{donor.name}}</p>
+                    <div class="mobile">Doou {{donor.movel}}</div>
+                </div>
+            {%endfor%}
         </section>
     </main>
 

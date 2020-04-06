@@ -1,0 +1,26 @@
+{
+  "name": "Modelo-Site-Doacoes",
+  "version": "1.0.0",
+  "description": "Este projeto é um site para cadastro de doações de móveis a vítimas de desastres naturais.",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreps11/Modelo-Site-Doacoes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreps11/Modelo-Site-Doacoes/issues"
+  },
+  "homepage": "https://github.com/andreps11/Modelo-Site-Doacoes#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "nunjucks": "^3.2.1",
+    "pg": "^8.0.0"
+  }
+}
