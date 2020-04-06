@@ -5,6 +5,7 @@ Esse projeto foi desenvolvido usando: HTML, CSS, JavaScript e SQL no Postbird.
 
 ## Postbird
 INSERT INTO "donors" ("name", "email", "movel")
+
 SELECT * FROM "donors";
 
 ## Demonstrativo do site
